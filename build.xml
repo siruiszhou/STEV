@@ -1,0 +1,44 @@
+<project default="transform" name="EssentraSmokeTest">
+<property name="base.dir" value="."/>
+<property name="src.dir" value="${base.dir}/src"/>
+<property name="java.dir" value="${src.dir}"/>
+<property name="lib.dir" value="${base.dir}/lib"/>
+<property name="testng.output.dir" value="${base.dir}/test-output"/>
+<property name="testng.UK" value="testngUK.xml"/>
+<property name="testng.US" value="testngUS.xml"/>
+<taskdef resource="testngtasks" classpath="${lib.dir}/testng-6.8.8.jar"/>
+<target name="clean">
+<delete dir="${base.dir}/bin"/>
+</target>
+<target name="compile" depends="clean">
+	<mkdir dir="${base.dir}/bin"/>
+	<javac srcdir="${base.dir}/src" encoding="UTF-8" destdir="${base.dir}/bin" classpathref="classes" includeantruntime="off" debug="on" debuglevel="lines,vars,source"/>
+</target>
+<path id="classes">
+<fileset dir="${lib.dir}" includes="*jar"/>
+<fileset dir="${lib.dir}" includes="*zip"/>
+<pathelement location="${base.dir}/bin"/>
+</path>
+<target name="runtestUK" depends="compile">
+	<testng outputdir="${testng.output.dir}" classpathref="classes" delegateCommandSystemProperties="true">
+	<xmlfileset dir="${base.dir}" includes="${testng.UK}"/>
+	</testng>
+</target>
+<target name="runtestUS" depends="compile">
+	<testng outputdir="${testng.output.dir}" classpathref="classes" delegateCommandSystemProperties="true">
+		<xmlfileset dir="${base.dir}" includes="${testng.US}"/>
+	</testng>
+</target>
+<target name="transform" depends="runtestUS">
+<xslt in="${testng.output.dir}/testng-results.xml" style="${testng.output.dir}/testng-results.xsl" out="${testng.output.dir}/styled-report.html">
+<param name="testNgXslt.outputDir" expression="D:\Program Files (x86)\Jenkins\jobs\Essentra\workspace/test-output/"/>
+<classpath refid="test.classpath"/>
+</xslt>
+</target>
+<path id="test.classpath">
+<fileset dir="${lib.dir}" includes="*.jar"/>
+<fileset dir="${lib.dir}" includes="*zip"/>
+<pathelement location="${base.dir}/bin"/>
+</path>
+
+</project>

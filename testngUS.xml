@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false" thread-count="2">
+  <test name="USsite">
+  	<parameter name="localSite" value="US" />
+  	<parameter name="browserType" value="Firefox" />
+  	<parameter name="siteEnv" value="DB" />  
+  	<groups>
+  		<run>
+  			<include name="p0" />
+  			<include name="p1" />
+  			<include name="p2" />
+  			<include name="p3" />
+  		</run>
+  	</groups>
+    <classes> 
+    <!-- 
+		<class name="testCases.EssentraSmoke09_ViewCAD_Login"/>
+		<class name="testCases.EssentraSmoke18_CheckoutSmplStdCatalogueAsLogin"/>	
+		<class name="testCases.EssentraSmoke13_CheckoutSmplStdAsLoginUseProforma"/>	
+		<class name="testCases.EssentraSmoke11_CheckoutStdAsGuest"/>
+		<class name="testCases.EssentraSmoke31_myAccountReOrderSample"/>
+		<class name="testCases.EssentraSmoke33_CheckoutAndMyOrderE2E"/>			
+		<class name="testCases.EssentraSmoke16_CheckoutStdAsLoginUseCreditCard"/>							
+	-->
+		<class name="testCases.EssentraSmoke01_HomePage"/>
+		<class name="testCases.EssentraSmoke02_Registration_Company"/>
+		<class name="testCases.EssentraSmoke03_Registration_Personal"/>
+		<class name="testCases.EssentraSmoke04_Browse_Navigation"/>
+		<class name="testCases.EssentraSmoke05_RequestQuote_Guest"/>
+		<class name="testCases.EssentraSmoke06_ViewCAD_Guest"/>
+		<class name="testCases.EssentraSmoke07_Login"/>
+		<class name="testCases.EssentraSmoke08_RequestQuote_Login"/>  
+
+		<class name="testCases.EssentraSmoke09_ViewCAD_Login"/>
+		
+		<class name="testCases.EssentraSmoke10_CheckoutSampleAsGuest"/>
+		<class name="testCases.EssentraSmoke11_CheckoutStdAsGuest"/>
+		<class name="testCases.EssentraSmoke12_CheckoutSmplAsLogin"/>
+		<class name="testCases.EssentraSmoke13_CheckoutSmplStdAsLoginUseProforma"/>
+		<class name="testCases.EssentraSmoke14_CheckoutStdAsLoginUseCreditAccount"/>
+		<class name="testCases.EssentraSmoke15_CheckoutCatalogueAsGuest"/>
+		<class name="testCases.EssentraSmoke16_CheckoutStdAsLoginUseCreditCard"/>	
+		<class name="testCases.EssentraSmoke17_CheckoutSmplCatalogueAsGuest"/>
+		
+		<class name="testCases.EssentraSmoke18_CheckoutSmplStdCatalogueAsLogin"/>	
+
+		<class name="testCases.EssentraSmoke19_RegisterAfterCheckoutSampleAsGuest"/>	
+		<class name="testCases.EssentraSmoke20_QuickOrder"/>		 
+		<class name="testCases.EssentraSmoke21_Search"/>
+		<class name="testCases.EssentraSmoke22_Search_NoResult"/>
+		<class name="testCases.EssentraSmoke23_Search_TooManyResult"/>
+		<class name="testCases.EssentraSmoke24_RequestCatalogue_DownloadPDF"/>
+		<class name="testCases.EssentraSmoke25_RequestCatalogue_Order"/>
+		<class name="testCases.EssentraSmoke26_myAccountLHN"/>
+		<class name="testCases.EssentraSmoke27_myAccountOverviewNavigation"/>
+		<class name="testCases.EssentraSmoke28_myAccountMyOrdersOrderLists"/>
+		<class name="testCases.EssentraSmoke29_myAccountOrderDetailsPage"/>	
+		<class name="testCases.EssentraSmoke30_myAccountAddToBasketFromSKUList"/>	
+		<class name="testCases.EssentraSmoke31_myAccountReOrderSample"/>
+		<class name="testCases.EssentraSmoke32_myAccountUpdateAccountDetails"/>	
+		<class name="testCases.EssentraSmoke33_CheckoutAndMyOrderE2E"/>	
+	 	<class name="testCases.EssentraSmoke34_SaveBasketAndMyOrderE2E"/>	
+	 	<class name="testCases.EssentraSmoke35_ForgotPassword"/>	
+	 	<class name="testCases.EssentraSmoke36_JoinCompany"/>	
+	 	<class name="testCases.EssentraSmoke37_ApproveJoinRequest"/>	
+	 	<class name="testCases.EssentraSmoke38_RejectJoinRequest"/>	
+	 	<class name="testCases.EssentraSmoke39_Promotion"/>	
+	 	<class name="testCases.EssentraSmoke40_AddAddressFromMyAccount"/>
+
+	</classes>
+  </test>
+
+
+
+</suite> 

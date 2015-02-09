@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Config>
+	<System>
+		<CONFIGVARIABLE_WEBDRIVER_FIREFOX_BIN>D:\\Firefox\\firefox.exe</CONFIGVARIABLE_WEBDRIVER_FIREFOX_BIN>
+		<CONFIGVARIABLE_WEBDRIVER_CHROME_BIN>C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe</CONFIGVARIABLE_WEBDRIVER_CHROME_BIN>
+		<CONFIGVARIABLE_NETWORK_PROXY_TYPE>network.proxy.type</CONFIGVARIABLE_NETWORK_PROXY_TYPE>
+		<CONFIGVARIABLE_IMPLICITLYWAIT>70</CONFIGVARIABLE_IMPLICITLYWAIT>
+		<CONFIGVARIABLE_PAGE_LOAD_TIMEOUT>700</CONFIGVARIABLE_PAGE_LOAD_TIMEOUT>
+		<CONFIGVARIABLE_HOMEPAGEURL>https://uk.devtestp.essentracomponents.com</CONFIGVARIABLE_HOMEPAGEURL>
+		<CONFIGVARIABLE_IE_DRIVER_PATH>IEDriverServer.exe</CONFIGVARIABLE_IE_DRIVER_PATH>
+		<CONFIGVARIABLE_WEBDRIVER_CHROME_BIN>C:\Users\SJI\AppData\Local\Google\Chrome\Application\chrome.exe</CONFIGVARIABLE_WEBDRIVER_CHROME_BIN>
+		<LOG_CONFIGURE_XML>logs/log4j.xml</LOG_CONFIGURE_XML>
+		<COL_TESTCASENAME>0</COL_TESTCASENAME>
+    	<COL_USERNAME>1</COL_USERNAME>
+    	<COL_PASSWORD>2</COL_PASSWORD>
+    	<COL_BROWSER>3</COL_BROWSER>
+    </System>
+    <URL>
+    	<HomePageURL>http://uk.devtestp.essentracomponents.com</HomePageURL>
+		<PIPURL>http://uk.devtestp.essentracomponents.com/shop/en-GB/essentracomponentsuk/suspensions/bearings/bearings/heavy-load-bearings-a00001350</PIPURL>
+    	<PDPURL>http://uk.devtestp.essentracomponents.com/shop/en-GB/essentracomponentsuk/suspensions/bearings/heavy-load-bearings</PDPURL>
+    	<PLPURL>http://uk.devtestp.essentracomponents.com/shop/en-GB/essentracomponentsuk/suspensions/bearings</PLPURL>
+    	<PIPSTDURL>http://uk.devtestp.essentracomponents.com/shop/en-GB/essentracomponentsuk/brakes/brake-pads/brake-pads/semi-metallic-brake-pads-a0000288</PIPSTDURL>
+    	<SAMPLE_SKU_URL>http://uk.devtestp.essentracomponents.com/shop/ProductDisplay?urlRequestType=Base<![CDATA[&]]>catalogId=10001<![CDATA[&]]>categoryId=10106<![CDATA[&]]>productId=10424<![CDATA[&]]>urlLangId=44<![CDATA[&]]>langId=<![CDATA[&]]>top_category=<![CDATA[&]]>parent_category_rn=10106<![CDATA[&]]>storeId=10166</SAMPLE_SKU_URL>
+    	<CATALOGUEURL>https://uk.devtestp.essentracomponents.com/shop/OrderCataloguesDisplay?langId=44<![CDATA[&]]>storeId=10166</CATALOGUEURL>
+    </URL>
+    <Data>
+    	<FirstName>Simbaa</FirstName>
+    	<Logonid>ez01@1229.com</Logonid>
+    	<Password>1234qwer</Password>
+    	<SearchTermPLP>battery</SearchTermPLP>
+    	<SearchTermNoResult>human</SearchTermNoResult>
+    	<SearchTermTooManyResult>pad</SearchTermTooManyResult>	
+    	<PostCode>LU12TL</PostCode>
+		<SKUNUM>HLB-SUS-UK</SKUNUM>
+		<IncorrectAccountNumber>9999999</IncorrectAccountNumber>
+		<IncorrectPostCode>1111111</IncorrectPostCode>
+		<CorrectAccountNumber>11000</CorrectAccountNumber>
+		<CorrectPostCode>LU12TL</CorrectPostCode>
+		<ParentCompany>company@20150109140238.uk</ParentCompany>
+		<ParentName>Company_20150109140238</ParentName>
+		<InvalidPromo>error</InvalidPromo>
+		<tenperoffPromo>eztesting01</tenperoffPromo>
+		<tendoroffPromo>eztesting</tendoroffPromo>
+		<CreditCardNum>633499110000000003</CreditCardNum>
+		<CreditCardCVS>444</CreditCardCVS>
+	</Data>
+	<Element>
+		<RegCountry>.//*[@id='regForm']/div[2]/fieldset/div[1]/div/select/option[4]</RegCountry>
+		<RegCountryP>.//*[@id='regForm']/div[2]/fieldset/div[1]/div/select/option[4]</RegCountryP>
+		<Country>.//option[@value = 'GB']</Country>
+	</Element>
+</Config>

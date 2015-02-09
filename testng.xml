@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false" thread-count="2">
+  <test name="UKsite">
+  	<parameter name="localSite" value="US" />
+  	<parameter name="browserType" value="Firefox" />
+  	<parameter name="siteEnv" value="DB" />  
+  	<groups>
+  		<run>
+  			<include name="p0" />
+  			<include name="p1" />
+  			<include name="p2" />
+  			<include name="p3" />
+  		</run>
+  	</groups>
+    <classes> 
+
+
+
+
+
+
+		<class name="testCases.EssentraSmoke19_RegisterAfterCheckoutSampleAsGuest"/>		
+		<class name="testCases.EssentraSmoke20_QuickOrder"/>		 
+		<class name="testCases.EssentraSmoke21_Search"/>
+		<class name="testCases.EssentraSmoke22_Search_NoResult"/>
+		<class name="testCases.EssentraSmoke23_Search_TooManyResult"/>
+		<class name="testCases.EssentraSmoke24_RequestCatalogue_DownloadPDF"/>
+		<class name="testCases.EssentraSmoke25_RequestCatalogue_Order"/>
+		<class name="testCases.EssentraSmoke26_myAccountLHN"/>
+		<class name="testCases.EssentraSmoke27_myAccountOverviewNavigation"/>
+		<class name="testCases.EssentraSmoke28_myAccountMyOrdersOrderLists"/>
+		<class name="testCases.EssentraSmoke29_myAccountOrderDetailsPage"/>
+		<class name="testCases.EssentraSmoke30_myAccountAddToBasketFromSKUList"/>
+		<class name="testCases.EssentraSmoke31_myAccountReOrderSample"/>
+		<class name="testCases.EssentraSmoke32_myAccountUpdateAccountDetails"/>
+		<class name="testCases.EssentraSmoke33_CheckoutAndMyOrderE2E"/>
+		<class name="testCases.EssentraSmoke34_SaveBasketAndMyOrderE2E"/>	
+		<class name="testCases.EssentraSmoke35_ForgotPassword"/>
+		<class name="testCases.EssentraSmoke36_JoinCompany"/>
+		<class name="testCases.EssentraSmoke37_ApproveJoinRequest"/>
+		<class name="testCases.EssentraSmoke38_RejectJoinRequest"/>
+		<class name="testCases.EssentraSmoke39_Promotion"/>
+
+
+		
+		
+
+
+
+
+
+		
+	</classes>
+  </test>
+
+</suite> 
